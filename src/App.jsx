@@ -1,11 +1,12 @@
 import Navbar from "./components/Navbar/Navbar.jsx"
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer.jsx"
 
 function App() {
 
   return (
     <>
       <Navbar/>
-      <h4>Navbar</h4>
+      <ItemListContainer greeting='Bienvenidos'/>
       <h1>ecomerceFari</h1>
     </>
   )
