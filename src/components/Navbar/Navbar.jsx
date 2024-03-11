@@ -1,6 +1,7 @@
 import classes from './Navbar.module.css'
 import CartWidget from '../CartWidget/CartWidget'
 import logo1 from './assets/parrilla.png'
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -8,9 +9,10 @@ const Navbar = () => {
         <header className={classes.header}>
             <img className={classes.img} src={logo1}/>
             <nav>
-                <a className={classes.nav}>minutas</a>
-                <a className={classes.nav}>pastas</a>
-                <a className={classes.nav}>postres</a>
+                <Link to='category/pastas'> Pastas</Link>
+                <Link to='category/minutas'>minutas</Link>
+                <Link to='category/postres'>postres</Link>
+                <Link to='category/ensaladas'>Ensaladas</Link>
             </nav>
             <CartWidget/>
         </header>
