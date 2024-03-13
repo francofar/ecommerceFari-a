@@ -1,26 +1,26 @@
 import { useState } from "react"
-
-const ItemCount =({initialValue = 1, stock, onAdd}) => {
+import "./ItemCount.css"
+const ItemCount = ({ initialValue = 1, stock, onAdd }) => {
     const [count, setCount] = useState(initialValue)
 
-    const decrement = () =>{
-        if (count > 1){
+    const decrement = () => {
+        if (count > 1) {
             setCount(prev => prev - 1)
         }
     }
 
     const increment = () => {
-        if (count < stock){
+        if (count < stock) {
             setCount(prev => prev + 1)
         }
     }
 
     return (
-        <div>
+        <div className="countCard">
             <h3>{count}</h3>
-            <button onClick={decrement}>-</button>
-            <button onClick={()=> onAdd(count)}>agregar al pedido</button>
-            <button onClick={increment}>+</button>
+            <button className="botonMin" onClick={decrement}>-</button>
+            <button className="botonMid" onClick={() => onAdd(count)}>Agregar al pedido</button>
+            <button className="botonMas" onClick={increment}>+</button>
         </div>
     )
 }

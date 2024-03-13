@@ -21,7 +21,7 @@ const ItemListContainer = ({greeting}) => {
     }, [categoryId])
     return (
         <main>
-            <h1 style ={{fontSize:'2.5rem', backgroundColor:'pink' }}>{ greeting }</h1>
+            <h1 style ={{fontSize:'3rem', backgroundColor:'orange'}}>{ greeting }</h1>
             <ItemList products={products} />
         </main>
             

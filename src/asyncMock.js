@@ -1,6 +1,6 @@
 const products = [
     {
-        id: '1', 
+        id: '1' ,
         name: 'Papas noisette 4 quesos', 
         price: 3000 , 
         category: 'minutas', 

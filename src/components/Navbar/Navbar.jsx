@@ -9,13 +9,13 @@ const Navbar = () => {
 
     return (
         <header className={classes.header}>
-            <h2 onClick={() => navigate('/')} style={{ color: 'red', fontSize: 10, cursor: 'pointer'}}>carta</h2>
+            <h2 onClick={() => navigate('/')} style={{ color: 'black', fontSize: 20, cursor: 'pointer'}}>Carta</h2>
             <img className={classes.img} src={logo1}/>
             <nav className={classes.nav}>
-                <Link to='/category/pastas'> Pastas</Link>
-                <Link to='/category/minutas'>minutas</Link>
-                <Link to='/category/postres'>postres</Link>
-                <Link to='/category/ensaladas'>Ensaladas</Link>
+                <Link className={classes.link} to='/category/pastas'> Pastas</Link>
+                <Link className={classes.link} to='/category/minutas'>minutas</Link>
+                <Link className={classes.link} to='/category/postres'>postres</Link>
+                <Link className={classes.link} to='/category/ensaladas'>Ensaladas</Link>
             </nav>
             <CartWidget/>
         </header>

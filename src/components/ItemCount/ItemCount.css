@@ -1,0 +1,57 @@
+.countCard{
+    display: flex;
+    flex-direction: column;
+    flex-direction: center;
+    align-items: center;
+
+}
+
+.botonMas{
+        min-width:35px;
+        height: 15px;
+        color: hsl(0, 0%, 0%);
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        background: #f3ae1a;
+        box-shadow: 0 5px #f1bf17;
+        margin: 5px;
+}
+.botonMin{
+    min-width:35px;
+    height: 15px;
+    color: hsl(0, 100%, 1%);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #f3ae1a;
+    box-shadow: 0 5px #f1bf17;
+    margin: 5px;
+}
+.botonMid{
+        min-width: 130px;
+        height: 40px;
+        color: hsl(0, 0%, 0%);
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 5px;
+        border: none;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+        background: #ffd819;
+        z-index: 1;
+    }
