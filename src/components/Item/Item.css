@@ -1,0 +1,14 @@
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f19419;
+    width: 300px;
+    margin: 5px;
+    padding: 10px;
+}
+.linkDetail{
+    text-decoration: none;
+    color: black;
+}
