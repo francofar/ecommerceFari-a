@@ -1,12 +1,16 @@
 import logo from './assets/carrito.png'
+import { useContext } from 'react'
+import { CartContext } from '../../context/CartContext'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const CartWidget = () => {
+    const { totalQuantity } = useContext(CartContext)
     return (
-        <button>
-            <img src={logo}/>
-            0
-        </button>
+        <Link to={'/cart'}>
+            <img src= {logo}/>
+            { totalQuantity}
+        </Link>
     )
 }
 
